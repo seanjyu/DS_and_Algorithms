@@ -1,5 +1,3 @@
-cpp binary
-
 #include <iostream>
 #include <string>
 #include <vector>
