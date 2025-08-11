@@ -4,8 +4,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-// Create a node data structure to store data within
-// our DLL. In our case, we will stores 'integers'
+// Create a node data structure to store data within DLL
 typedef struct node
 {
     int data;
@@ -17,8 +16,8 @@ typedef struct node
 typedef struct DLL
 {
     int count;    // count keeps track of how many items are in the DLL.
-    node_t *head; // head points to the first node in our DLL.
-    node_t *tail; // tail points to the last node in our DLL.
+    node_t *head; // head points to the first node in DLL.
+    node_t *tail; // tail points to the last node in DLL.
 } dll_t;
 
 // Creates a DLL

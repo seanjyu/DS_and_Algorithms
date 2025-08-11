@@ -11,16 +11,15 @@ struct queue
                            // (i.e. the front or head of the line)
     unsigned int size;     // How many total elements we currently have enqueued.
     unsigned int capacity; // Maximum number of items the queue can hold
-    int *data;             // The 'integer' data our queue holds
+    int *data;             // Integer data
 };
 
 // Creates a global definition of 'queue_t' 
 typedef struct queue queue_t;
 
-/** Create a queue
- * Returns a pointer to a newly created queue.
- * data should be stored on the heap (malloc)
- */
+// Create a queue
+// Returns a pointer to a newly created queue.
+// data should be stored on the heap (malloc)
 queue_t *create_queue(unsigned int _capacity)
 {
     // store data in heap and assign capacity
@@ -34,10 +33,9 @@ queue_t *create_queue(unsigned int _capacity)
     return myQueue;
 }
 
-/** Check if the queue is empty
- *  Returns 1 if true (The queue is completely empty)
- * Returns 0 if false (the queue has at least one element enqueued)
- **/
+// Check if the queue is empty
+//  Returns 1 if true (The queue is completely empty)
+// Returns 0 if false (the queue has at least one element enqueued)
 int queue_empty(queue_t *q)
 {
     if (q -> size == 0){
